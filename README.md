@@ -13,10 +13,7 @@ Module to extend functionalities of the System section
  
 ![Telnet](https://github.com/rocketbot-cl/Telnet/blob/master/example/telnet.png) 
 
-## Updates
-Author | Message | Date
----|----|---
-Danilo| Fix command: Read information|  2020-01-22
+
 
 
 <h2>License</h2>
