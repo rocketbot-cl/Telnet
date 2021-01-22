@@ -1,0 +1,209 @@
+{
+  "author": "Danilo Toro",
+  "description": "Module to work with telnet protocol",
+  "disclaimer": "THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
+  "version": "1.0",
+  "license": "MIT",
+  "homepage": "http://rocketbot.co/",
+  "name": "Telnet",
+  "linux": true,
+  "windows": true,
+  "mac": true,
+  "docker": true,
+  "dependencies": {},
+  "title": {
+    "en": "Telnet",
+    "es": "Telnet"
+  },
+  "icon": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBvbHlnb24gc3R5bGU9ImZpbGw6IzZBN0Q5ODsiIHBvaW50cz0iMTUyLjcxNCwzMzEuNzE3IDEyNC44NDksMzAzLjg1MiAxNzMuMDk1LDI1NS42MDYgMTI0Ljg0OSwyMDcuNDU4IDE1Mi43MTQsMTc5LjU5NCANCgkyMjguNzI2LDI1NS42MDYgIi8+DQo8cGF0aCBzdHlsZT0iZmlsbDojMDBDRENEOyIgZD0iTTAsOS44NDZ2NDkyLjMwOGg1MTJWOS44NDZIMHogTTQ3Mi42MTUsNDkuMjMxdjM5LjM4NUgzOS4zODVWNDkuMjMxSDQ3Mi42MTV6IE0zOS4zODUsNDYyLjc2OVYxMjgNCgloNDMzLjIzMXYzMzQuNzY5SDM5LjM4NXoiLz4NCjxyZWN0IHg9IjExOC4xNTQiIHk9IjM3NC4xNTQiIHN0eWxlPSJmaWxsOiM2QTdEOTg7IiB3aWR0aD0iMjY1Ljg0NiIgaGVpZ2h0PSIzOS4zODUiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K",
+  "children": [
+    {
+      "title": {
+        "en": "configuration",
+        "es": "configuración"
+      },
+      "description": {
+        "en": "Setup telnet",
+        "es": "Inicia configuración telnet"
+      },
+      "form": {
+        "css": "modal-lg",
+        "inputs": [
+          {
+            "type": "input",
+            "placeholder": {
+              "es": "test.ftp.com",
+              "en": "test.ftp.com"
+            },
+            "title": {
+              "es": "Servidor:",
+              "en": "Server:"
+            },
+            "id": "host",
+            "css": "col-md-6"
+          },
+          {
+            "type": "input",
+            "placeholder": {
+              "es": "0",
+              "en": "0"
+            },
+            "title": {
+              "es": "Puerto:",
+              "en": "Port:"
+            },
+            "id": "port",
+            "css": "col-md-2"
+          },
+          {
+            "type": "input",
+            "placeholder": {
+              "es": "Variable",
+              "en": "Variable"
+            },
+            "title": {
+              "es": "Asignar resultado a variable:",
+              "en": "Assign result to variable:"
+            },
+            "help": {
+              "es": "Nombre de variable sin {}",
+              "en": "Variable name without {}"
+            },
+            "id": "var_",
+            "css": "col-md-4"
+          },
+          {
+            "type": "input",
+            "placeholder": {
+              "es": "user@test.com",
+              "en": "user@test.com"
+            },
+            "title": {
+              "es": "Usuario:",
+              "en": "User:"
+            },
+            "id": "user",
+            "css": "col-md-6"
+          },
+          {
+            "type": "input",
+            "placeholder": {
+              "es": "******",
+              "en": "******"
+            },
+            "title": {
+              "es": "Contraseña:",
+              "en": "Password:"
+            },
+            "id": "password",
+            "css": "col-md-6"
+          }
+        ]
+      },
+      "video_youtube": "",
+      "icon": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBvbHlnb24gc3R5bGU9ImZpbGw6IzZBN0Q5ODsiIHBvaW50cz0iMTUyLjcxNCwzMzEuNzE3IDEyNC44NDksMzAzLjg1MiAxNzMuMDk1LDI1NS42MDYgMTI0Ljg0OSwyMDcuNDU4IDE1Mi43MTQsMTc5LjU5NCANCgkyMjguNzI2LDI1NS42MDYgIi8+DQo8cGF0aCBzdHlsZT0iZmlsbDojMDBDRENEOyIgZD0iTTAsOS44NDZ2NDkyLjMwOGg1MTJWOS44NDZIMHogTTQ3Mi42MTUsNDkuMjMxdjM5LjM4NUgzOS4zODVWNDkuMjMxSDQ3Mi42MTV6IE0zOS4zODUsNDYyLjc2OVYxMjgNCgloNDMzLjIzMXYzMzQuNzY5SDM5LjM4NXoiLz4NCjxyZWN0IHg9IjExOC4xNTQiIHk9IjM3NC4xNTQiIHN0eWxlPSJmaWxsOiM2QTdEOTg7IiB3aWR0aD0iMjY1Ljg0NiIgaGVpZ2h0PSIzOS4zODUiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K",
+      "module": "config",
+      "module_name": "Telnet",
+      "father": "module",
+      "group": "scripts",
+      "linux": true,
+      "windows": true,
+      "mac": true,
+      "docker": false,
+      "visible": true,
+      "options": false
+    },
+    {
+      "en": {
+        "title": "Read data",
+        "description": "Read all data until connection closed",
+        "title_options": "Select Option",
+        "options": null
+      },
+      "es": {
+        "title": "Leer información",
+        "description": "Lee toda la información hasta el cierre de la conexión",
+        "title_options": "Seleccione una opción",
+        "options": null
+      },
+      "form": {
+        "css": "modal-md",
+        "inputs": [
+          {
+            "type": "input",
+            "placeholder": {
+              "es": "Variable",
+              "en": "Variable"
+            },
+            "title": {
+              "es": "Guardar resultado en variable:",
+              "en": "Store result in variable:"
+            },
+            "help": {
+              "es": "Nombre de variable sin {}",
+              "en": "Variable name without {}"
+            },
+            "id": "result",
+            "css": "col-md-12"
+          }
+        ]
+      },
+      "video_youtube": "",
+      "icon": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBvbHlnb24gc3R5bGU9ImZpbGw6IzZBN0Q5ODsiIHBvaW50cz0iMTUyLjcxNCwzMzEuNzE3IDEyNC44NDksMzAzLjg1MiAxNzMuMDk1LDI1NS42MDYgMTI0Ljg0OSwyMDcuNDU4IDE1Mi43MTQsMTc5LjU5NCANCgkyMjguNzI2LDI1NS42MDYgIi8+DQo8cGF0aCBzdHlsZT0iZmlsbDojMDBDRENEOyIgZD0iTTAsOS44NDZ2NDkyLjMwOGg1MTJWOS44NDZIMHogTTQ3Mi42MTUsNDkuMjMxdjM5LjM4NUgzOS4zODVWNDkuMjMxSDQ3Mi42MTV6IE0zOS4zODUsNDYyLjc2OVYxMjgNCgloNDMzLjIzMXYzMzQuNzY5SDM5LjM4NXoiLz4NCjxyZWN0IHg9IjExOC4xNTQiIHk9IjM3NC4xNTQiIHN0eWxlPSJmaWxsOiM2QTdEOTg7IiB3aWR0aD0iMjY1Ljg0NiIgaGVpZ2h0PSIzOS4zODUiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K",
+      "module": "read",
+      "module_name": "Telnet",
+      "visible": true,
+      "options": false,
+      "father": "module",
+      "group": "scripts",
+      "linux": true,
+      "windows": true,
+      "mac": true,
+      "docker": true
+    },
+    {
+      "en": {
+        "title": "Write",
+        "description": "Write data to the socket",
+        "title_options": "Select Option",
+        "options": null
+      },
+      "es": {
+        "title": "Escribir",
+        "description": "Escribe datos en el socket",
+        "title_options": "Seleccione una opción",
+        "options": null
+      },
+      "form": {
+        "css": "modal-md",
+        "inputs": [
+          {
+            "type": "input",
+            "placeholder": {
+              "es": "ls",
+              "en": "ls"
+            },
+            "title": {
+              "es": "Dato a escribir",
+              "en": "Data to write"
+            },
+            "id": "msg",
+            "css": "col-md-12"
+          }
+        ]
+      },
+      "video_youtube": "aMV6cXPMMSo",
+      "icon": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBvbHlnb24gc3R5bGU9ImZpbGw6IzZBN0Q5ODsiIHBvaW50cz0iMTUyLjcxNCwzMzEuNzE3IDEyNC44NDksMzAzLjg1MiAxNzMuMDk1LDI1NS42MDYgMTI0Ljg0OSwyMDcuNDU4IDE1Mi43MTQsMTc5LjU5NCANCgkyMjguNzI2LDI1NS42MDYgIi8+DQo8cGF0aCBzdHlsZT0iZmlsbDojMDBDRENEOyIgZD0iTTAsOS44NDZ2NDkyLjMwOGg1MTJWOS44NDZIMHogTTQ3Mi42MTUsNDkuMjMxdjM5LjM4NUgzOS4zODVWNDkuMjMxSDQ3Mi42MTV6IE0zOS4zODUsNDYyLjc2OVYxMjgNCgloNDMzLjIzMXYzMzQuNzY5SDM5LjM4NXoiLz4NCjxyZWN0IHg9IjExOC4xNTQiIHk9IjM3NC4xNTQiIHN0eWxlPSJmaWxsOiM2QTdEOTg7IiB3aWR0aD0iMjY1Ljg0NiIgaGVpZ2h0PSIzOS4zODUiLz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K",
+      "module": "write",
+      "module_name": "Telnet",
+      "visible": true,
+      "options": false,
+      "father": "module",
+      "group": "scripts",
+      "linux": true,
+      "windows": true,
+      "mac": true,
+      "docker": true
+    }
+  ]
+}
