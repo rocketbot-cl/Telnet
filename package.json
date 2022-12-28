@@ -2,9 +2,9 @@
   "author": "Danilo Toro",
   "description": "Module to work with telnet protocol",
   "disclaimer": "THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.",
-  "version": "1.0",
+  "version": "1.0.1",
   "license": "MIT",
-  "homepage": "http://rocketbot.co/",
+  "homepage": "http://rocketbot.com/",
   "name": "Telnet",
   "linux": true,
   "windows": true,
@@ -39,6 +39,10 @@
               "es": "Servidor:",
               "en": "Server:"
             },
+            "description": {
+              "es": "Dirección IP o nombre de dominio",
+              "en": "IP address or domain name"
+            },
             "id": "host",
             "css": "col-md-6"
           },
@@ -52,6 +56,10 @@
               "es": "Puerto:",
               "en": "Port:"
             },
+            "description": {
+              "es": "Puerto de conexión",
+              "en": "Connection port"
+            },
             "id": "port",
             "css": "col-md-2"
           },
@@ -64,6 +72,10 @@
             "title": {
               "es": "Asignar resultado a variable:",
               "en": "Assign result to variable:"
+            },
+            "description": {
+              "es": "Nombre de variable donde se almacenará el resultado de la conexión",
+              "en": "Variable name where the connection result will be stored"
             },
             "help": {
               "es": "Nombre de variable sin {}",
@@ -82,6 +94,10 @@
               "es": "Usuario:",
               "en": "User:"
             },
+            "description": {
+              "es": "Usuario de conexión",
+              "en": "Connection user"
+            },
             "id": "user",
             "css": "col-md-6"
           },
@@ -94,6 +110,10 @@
             "title": {
               "es": "Contraseña:",
               "en": "Password:"
+            },
+            "description": {
+              "es": "Contraseña de conexión",
+              "en": "Connection password"
             },
             "id": "password",
             "css": "col-md-6"
@@ -138,6 +158,10 @@
             "title": {
               "es": "Guardar resultado en variable:",
               "en": "Store result in variable:"
+            },
+            "description": {
+              "es": "Nombre de variable donde se guardará la información leída",
+              "en": "Variable name where the read information will be stored"
             },
             "help": {
               "es": "Nombre de variable sin {}",
@@ -186,6 +210,10 @@
             "title": {
               "es": "Dato a escribir",
               "en": "Data to write"
+            },
+            "description": {
+              "es": "Dato a escribir en el socket",
+              "en": "Data to write in the socket"
             },
             "id": "msg",
             "css": "col-md-12"
