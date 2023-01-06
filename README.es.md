@@ -13,7 +13,7 @@ __Descarga__ e __instala__ el contenido en la carpeta 'modules' en la ruta de Ro
 ## Overview
 
 
-1. configuración  
+1. Configuración  
 Inicia configuración telnet
 
 2. Leer información  

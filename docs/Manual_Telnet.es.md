@@ -13,7 +13,7 @@ __Descarga__ e __instala__ el contenido en la carpeta 'modules' en la ruta de Ro
 
 ## Descripción de los comandos
 
-### configuración
+### Configuración
   
 Inicia configuración telnet
 |Parámetros|Descripción|ejemplo|
