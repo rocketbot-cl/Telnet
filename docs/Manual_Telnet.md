@@ -13,7 +13,7 @@ __Download__ and __install__ the content in 'modules' folder in Rocketbot path
 
 ## Description of the commands
 
-### configuration
+### Configuration
   
 Setup telnet
 |Parameters|Description|example|

@@ -19,8 +19,8 @@
   "children": [
     {
       "title": {
-        "en": "configuration",
-        "es": "configuración"
+        "en": "Configuration",
+        "es": "Configuración"
       },
       "description": {
         "en": "Setup telnet",
