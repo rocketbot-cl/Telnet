@@ -1,26 +1,26 @@
 # Telnet
   
-Module to work with telnet protocol  
+Módulo para trabajar con el protocolo telnet  
 
 *Read this in other languages: [English](README.md), [Español](README.es.md).*
 
-## How to install this module
+## Como instalar este módulo
   
-__Download__ and __install__ the content in 'modules' folder in Rocketbot path  
+__Descarga__ e __instala__ el contenido en la carpeta 'modules' en la ruta de Rocketbot.  
 
 
 
 ## Overview
 
 
-1. Configuration  
-Setup telnet
+1. Configuración  
+Inicia configuración telnet
 
-2. Read data  
-Read all data until connection closed
+2. Leer información  
+Lee toda la información hasta el cierre de la conexión
 
-3. Write  
-Write data to the socket  
+3. Escribir  
+Escribe datos en el socket  
 
 
 
